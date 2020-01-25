@@ -1,15 +1,9 @@
 plugins {
-    kotlin("jvm") version "1.3.61"
+    kotlin("jvm")
 }
 
 group = "smoljan.io"
 version = "1.0-SNAPSHOT"
-
-allprojects {
-    extra.apply {
-        set("ktorVersion", "1.3.0")
-    }
-}
 
 repositories {
     mavenCentral()
@@ -17,6 +11,9 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+
+    implementation(project(":main:domain"))
+    implementation("io.ktor:ktor-server-netty:${extra["ktorVersion"]}")
 }
 
 tasks {
