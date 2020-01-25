@@ -2,7 +2,7 @@ plugins {
     kotlin("jvm") version "1.3.61"
 }
 
-group = "smoljan.io"
+group = "example.com"
 version = "1.0-SNAPSHOT"
 
 allprojects {
