@@ -8,6 +8,7 @@ version = "1.0-SNAPSHOT"
 allprojects {
     extra.apply {
         set("ktorVersion", "1.3.0")
+        set("jUnitVersion", "5.3.1")
     }
 }
 

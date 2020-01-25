@@ -11,6 +11,9 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${extra["jUnitVersion"]}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${extra["jUnitVersion"]}")
 }
 
 tasks {
